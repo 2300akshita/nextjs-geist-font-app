@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-50 min-h-screen">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="bg-white rounded-xl shadow-xl p-8 mt-10">
+            <div class="flex items-center space-x-3 mb-8">
+                <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                <h1 class="text-3xl font-bold text-gray-900">Course Generator</h1>
+            </div>
+            
+            <form id="courseForm" class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg space-y-6">
+                    <div>
+                        <label for="topic" class="block text-sm font-medium text-gray-700 mb-1">
+                            <i class="fas fa-book-open mr-2 text-indigo-600"></i>Topic
+                        </label>
+                        <input type="text" id="topic" name="topic" required
+                            class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-3 border transition duration-150">
+                    </div>
+                    
+                    <div>
+                        <label for="level" class="block text-sm font-medium text-gray-700 mb-1">
+                            <i class="fas fa-layer-group mr-2 text-indigo-600"></i>Level
+                        </label>
+                        <select id="level" name="level" required
+                            class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-3 border transition duration-150">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="days" class="block text-sm font-medium text-gray-700 mb-1">
+                            <i class="fas fa-calendar-alt mr-2 text-indigo-600"></i>Number of Days
+                        </label>
+                        <input type="number" id="days" name="days" min="1" max="30" required
+                            class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-3 border transition duration-150">
+                    </div>
+                </div>
+                
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white rounded-lg py-3 px-4 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-150 flex items-center justify-center space-x-2">
+                    <i class="fas fa-magic"></i>
+                    <span>Generate Course</span>
+                </button>
+            </form>
+            
+            <div id="result" class="mt-8 hidden">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                    Generated Course
+                </h2>
+                <div id="courseContent" class="bg-gray-50 rounded-lg p-6 space-y-6"></div>
+            </div>
+
+            <div id="loading" class="hidden mt-8 text-center">
+                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto"></div>
+                <p class="mt-4 text-gray-600">Generating your course...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('courseForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                topic: document.getElementById('topic').value,
+                level: document.getElementById('level').value,
+                days: parseInt(document.getElementById('days').value)
+            };
+
+            // Show loading state
+            document.getElementById('loading').classList.remove('hidden');
+            document.getElementById('result').classList.add('hidden');
+            
+            try {
+                const response = await fetch('/generate-course', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                displayCourse(data);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error generating course. Please try again.');
+            } finally {
+                // Hide loading state
+                document.getElementById('loading').classList.add('hidden');
+            }
+        });
+
+        function displayCourse(course) {
+            const resultDiv = document.getElementById('result');
+            const contentDiv = document.getElementById('courseContent');
+            
+            let html = `
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-center space-x-2 text-lg font-semibold text-indigo-600">
+                            <i class="fas fa-book"></i>
+                            <h3>${course.topic}</h3>
+                        </div>
+                        <div class="mt-2 text-gray-600">
+                            <p><i class="fas fa-signal mr-2"></i>Level: ${course.level}</p>
+                            <p><i class="fas fa-calendar mr-2"></i>Duration: ${course.days} days</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                            <i class="fas fa-cubes text-indigo-600 mr-2"></i>Modules
+                        </h3>
+                        ${course.modules.map(module => `
+                            <div class="mt-4 bg-white p-6 rounded-lg shadow-sm">
+                                <h4 class="font-medium text-indigo-600">${module.name}</h4>
+                                <ul class="mt-4 space-y-4">
+                                    ${module.lessons.map(lesson => `
+                                        <li class="border-l-4 border-indigo-200 pl-4">
+                                            <p class="font-medium">${lesson.title}</p>
+                                            <p class="text-gray-600 mt-1">${lesson.content}</p>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                            <i class="fas fa-tasks text-indigo-600 mr-2"></i>Daily Tasks
+                        </h3>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <ul class="space-y-2">
+                                ${course.tasks.map(task => `
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>${task}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                            <i class="fas fa-question-circle text-indigo-600 mr-2"></i>Quizzes
+                        </h3>
+                        ${course.quizzes.map(quiz => `
+                            <div class="mt-4 bg-white p-6 rounded-lg shadow-sm">
+                                <p class="font-medium">${quiz.question}</p>
+                                <ul class="mt-4 space-y-2">
+                                    ${quiz.options.map(option => `
+                                        <li class="flex items-center space-x-2">
+                                            <input type="radio" name="quiz" class="text-indigo-600 focus:ring-indigo-500">
+                                            <span>${option}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 flex items-center">
+                            <i class="fas fa-clipboard-list text-indigo-600 mr-2"></i>Practice Plan
+                        </h3>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <ul class="space-y-2">
+                                ${course.practice_plan.map(plan => `
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-indigo-600 mt-1 mr-2"></i>
+                                        <span>${plan}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            contentDiv.innerHTML = html;
+            resultDiv.classList.remove('hidden');
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
