@@ -1,0 +1,283 @@
+2025-05-28 03:05:43 | INFO | Ollama integration available
+2025-05-28 03:06:29 | INFO | Ollama integration available
+2025-05-28 03:06:43 | INFO | Generating course for topic: Python Programming, level: beginner, days: 30
+2025-05-28 03:06:43.474 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 30
+2025-05-28 03:06:43 | INFO | Attempting to generate course using AI.
+2025-05-28 03:06:43.474 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:06:43 | ERROR | Error generating content with Ollama: Client.generate() got an unexpected keyword argument 'num_predict'
+2025-05-28 03:06:43.474 | ERROR    | ai_service:generate_content:22 - Error generating content with Ollama: Client.generate() got an unexpected keyword argument 'num_predict'
+2025-05-28 03:06:43 | ERROR | AI generation failed: Failed to generate course outline
+2025-05-28 03:06:43.475 | ERROR    | course_generator:generate_course_with_ai:92 - AI generation failed: Failed to generate course outline
+2025-05-28 03:06:43 | WARNING | AI generation failed with error: Failed to generate course outline
+2025-05-28 03:06:43.475 | WARNING  | course_generator:generate_course:15 - AI generation failed with error: Failed to generate course outline
+2025-05-28 03:06:43 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:06:43.475 | INFO     | course_generator:generate_course_rule_based:21 - Falling back to rule-based course generation.
+2025-05-28 03:06:43 | INFO | Course generated successfully
+2025-05-28 03:06:43.475 | INFO     | main:generate_course_endpoint:29 - Course generated successfully
+2025-05-28 03:15:38 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:15:38.394 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:15:38 | INFO | Attempting to generate course using AI.
+2025-05-28 03:15:38.394 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:15:38 | ERROR | Error generating content with Ollama: Client.generate() got an unexpected keyword argument 'num_predict'
+2025-05-28 03:15:38.394 | ERROR    | ai_service:generate_content:22 - Error generating content with Ollama: Client.generate() got an unexpected keyword argument 'num_predict'
+2025-05-28 03:15:38 | ERROR | AI generation failed: Failed to generate course outline
+2025-05-28 03:15:38.394 | ERROR    | course_generator:generate_course_with_ai:92 - AI generation failed: Failed to generate course outline
+2025-05-28 03:15:38 | WARNING | AI generation failed with error: Failed to generate course outline
+2025-05-28 03:15:38.394 | WARNING  | course_generator:generate_course:15 - AI generation failed with error: Failed to generate course outline
+2025-05-28 03:15:38 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:15:38.395 | INFO     | course_generator:generate_course_rule_based:21 - Falling back to rule-based course generation.
+2025-05-28 03:15:38 | INFO | Course generated successfully
+2025-05-28 03:15:38.395 | INFO     | main:generate_course_endpoint:29 - Course generated successfully
+2025-05-28 03:16:53 | INFO | Ollama integration available
+2025-05-28 03:17:54 | INFO | Ollama integration available
+2025-05-28 03:18:13 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:18:13.239 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:18:13 | INFO | Attempting to generate course using AI.
+2025-05-28 03:18:13.240 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:23:54 | INFO | Ollama integration available
+2025-05-28 03:24:09 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:24:09.837 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:24:09 | INFO | Attempting to generate course using AI.
+2025-05-28 03:24:09.838 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:24:09 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 03:24:09.840 | ERROR    | ai_service:generate_content:21 - Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 03:24:09 | ERROR | AI generation failed: Failed to generate course outline
+2025-05-28 03:24:09.840 | ERROR    | course_generator:generate_course_with_ai:92 - AI generation failed: Failed to generate course outline
+2025-05-28 03:24:09 | WARNING | AI generation failed with error: Failed to generate course outline
+2025-05-28 03:24:09.840 | WARNING  | course_generator:generate_course:15 - AI generation failed with error: Failed to generate course outline
+2025-05-28 03:24:09 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:24:09.840 | INFO     | course_generator:generate_course_rule_based:21 - Falling back to rule-based course generation.
+2025-05-28 03:24:09 | INFO | Course generated successfully
+2025-05-28 03:24:09.840 | INFO     | main:generate_course_endpoint:29 - Course generated successfully
+2025-05-28 03:24:34 | INFO | Ollama integration available
+2025-05-28 03:26:10 | INFO | Ollama integration available
+2025-05-28 03:26:23 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:26:23.069 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:26:23 | INFO | Attempting to generate course using AI.
+2025-05-28 03:26:23.069 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:35:25 | ERROR | Error parsing modules: Expecting value: line 37 column 9 (char 2267)
+2025-05-28 03:35:25.812 | ERROR    | course_generator:parse_modules:120 - Error parsing modules: Expecting value: line 37 column 9 (char 2267)
+2025-05-28 03:35:25 | INFO | Course generated successfully
+2025-05-28 03:35:25.813 | INFO     | main:generate_course_endpoint:29 - Course generated successfully
+2025-05-28 03:36:09 | INFO | Ollama integration available
+2025-05-28 03:36:52 | INFO | Ollama integration available
+2025-05-28 03:37:03 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:37:03.503 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:37:03 | INFO | Attempting to generate course using AI.
+2025-05-28 03:37:03.503 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:42:59 | INFO | Ollama integration available
+2025-05-28 03:43:15 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:43:15.158 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:43:15 | INFO | Attempting to generate course using AI.
+2025-05-28 03:43:15.158 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:44:26 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 03:44:26.520 | ERROR    | course_generator:generate_course_with_ai:92 - AI generation failed: Failed to generate modules content
+2025-05-28 03:44:26 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 03:44:26.520 | WARNING  | course_generator:generate_course:15 - AI generation failed with error: Failed to generate modules content
+2025-05-28 03:44:26 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:44:26.521 | INFO     | course_generator:generate_course_rule_based:21 - Falling back to rule-based course generation.
+2025-05-28 03:44:26 | INFO | Course generated successfully
+2025-05-28 03:44:26.521 | INFO     | main:generate_course_endpoint:29 - Course generated successfully
+2025-05-28 03:45:01 | INFO | Ollama integration available
+2025-05-28 03:45:52 | INFO | Ollama integration available
+2025-05-28 03:46:01 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:46:01.437 | INFO     | main:generate_course_endpoint:27 - Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:46:01 | INFO | Attempting to generate course using AI.
+2025-05-28 03:46:01.438 | INFO     | course_generator:generate_course_with_ai:69 - Attempting to generate course using AI.
+2025-05-28 03:47:22 | ERROR | Failed to parse JSON response
+2025-05-28 03:47:22.954 | ERROR    | ai_service:generate_content:39 - Failed to parse JSON response
+2025-05-28 03:47:22 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 03:47:22.954 | ERROR    | ai_service:generate_course_content:136 - Error generating course content: Failed to generate modules content
+2025-05-28 03:47:22 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 03:47:22.954 | ERROR    | course_generator:generate_course_with_ai:92 - AI generation failed: Failed to generate modules content
+2025-05-28 03:47:22 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 03:47:22.954 | WARNING  | course_generator:generate_course:15 - AI generation failed with error: Failed to generate modules content
+2025-05-28 03:47:22 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:47:22.955 | INFO     | course_generator:generate_course_rule_based:21 - Falling back to rule-based course generation.
+2025-05-28 03:47:22 | INFO | Course generated successfully
+2025-05-28 03:47:22.955 | INFO     | main:generate_course_endpoint:29 - Course generated successfully
+2025-05-28 03:47:49 | INFO | Ollama integration available
+2025-05-28 03:48:04 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:48:04 | INFO | Attempting to generate course using AI.
+2025-05-28 03:49:08 | ERROR | Failed to parse JSON response
+2025-05-28 03:49:08 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 03:49:08 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 03:49:08 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 03:49:08 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:49:08 | ERROR | Error generating course: Object of type Module is not JSON serializable
+2025-05-28 03:49:38 | INFO | Ollama integration available
+2025-05-28 03:50:03 | INFO | Ollama integration available
+2025-05-28 03:50:32 | INFO | Ollama integration available
+2025-05-28 03:50:46 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:50:46 | INFO | Attempting to generate course using AI.
+2025-05-28 03:51:52 | ERROR | Failed to parse JSON response
+2025-05-28 03:51:52 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 03:51:52 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 03:51:52 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 03:51:52 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:51:52 | INFO | Course generated successfully
+2025-05-28 03:52:39 | INFO | Ollama integration available
+2025-05-28 03:53:26 | INFO | Ollama integration available
+2025-05-28 03:53:40 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:53:40 | INFO | Attempting to generate course using AI.
+2025-05-28 03:54:48 | ERROR | Failed to parse JSON response
+2025-05-28 03:54:48 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 03:54:48 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 03:54:48 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 03:54:48 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:54:48 | INFO | Course generated successfully
+2025-05-28 03:55:47 | INFO | Ollama integration available
+2025-05-28 03:56:02 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:56:02 | INFO | Attempting to generate course using AI.
+2025-05-28 03:57:55 | ERROR | Failed to parse JSON response
+2025-05-28 03:57:55 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 03:57:55 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 03:57:55 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 03:57:55 | INFO | Falling back to rule-based course generation.
+2025-05-28 03:57:55 | INFO | Course generated successfully
+2025-05-28 03:58:40 | INFO | Ollama integration available
+2025-05-28 03:58:57 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 03:58:57 | INFO | Attempting to generate course using AI.
+2025-05-28 04:00:47 | ERROR | Failed to parse JSON after cleaning: Extra data: line 1 column 10 (char 9)
+2025-05-28 04:00:47 | ERROR | Problematic JSON: ```json
+{
+    "modules": [
+        {
+            "name": "Introduction to Python",
+            "lessons": [
+                {
+                    "title": "Python Basics",
+                    "content": "Overview of Python syntax, variables and data types"
+                },
+                {
+                    "title": "Control Structures",
+                    "content": "Learn about conditional statements and loops in Python"
+                }
+            ]
+        },
+        {
+            "name": "Data Structures",
+            "lessons": [
+                {
+                    "title": "Lists and Tuples",
+                    "content": "Understand the use of lists and tuples in Python"
+                },
+                {
+                    "title": "Dictionaries",
+                    "content": "Learn how to create, access and manipulate dictionaries"
+                }
+            ]
+        },
+        {
+            "name": "File Handling",
+            "lessons": [
+                {
+                    "title": "Reading Files",
+                    "content": "Understand how to read files in Python"
+                },
+                {
+                    "title": "Writing to Files",
+                    "content": "Learn how to write data into a file"
+                }
+            ]
+        },
+        {
+            "name": "Functions and Modules",
+            "lessons": [
+                {
+                    "title": "Defining Functions",
+                    "content": "Learn how to define and call functions in Python"
+                },
+                {
+                    "title": "Importing Modules",
+                    "content": "Understand how to import and use modules in Python"
+                }
+            ]
+        },
+        {
+            "name": "Exception Handling",
+            "lessons": [
+                {
+                    "title": "Understanding Exceptions",
+                    "content": "Learn about different types of exceptions in Python"
+                },
+                {
+                    "title": "Try-Except Blocks",
+                    "content": "Learn how to handle exceptions using try-except blocks"
+                }
+            ]
+        },
+        {
+            "name": "Object-Oriented Programming",
+            "lessons": [
+                {
+                    "title": "Classes and Objects",
+                    "content": "Learn about classes, objects and their properties in Python"
+                },
+                {
+                    "title": "Inheritance",
+                    "content": "Understand the concept of inheritance in object-oriented programming"
+                }
+            ]
+        },
+        {
+            "name": "Advanced Topics",
+            "lessons": [
+                {
+                    "title": "Decorators",
+                    "content": "Learn about decorators and their use in Python"
+                },
+                {
+                    "title": "Generators",
+                    "content": "Understand how to create and use generators in Python"
+                }
+            ]
+        }
+    ]
+}
+```
+2025-05-28 04:00:47 | ERROR | Failed to parse JSON response
+2025-05-28 04:00:47 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 04:00:47 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 04:00:47 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 04:00:47 | INFO | Falling back to rule-based course generation.
+2025-05-28 04:00:47 | INFO | Course generated successfully
+2025-05-28 04:00:47 | INFO | Ollama integration available
+2025-05-28 04:02:14 | INFO | Ollama integration available
+2025-05-28 04:03:07 | INFO | Ollama integration available
+2025-05-28 04:05:30 | INFO | Ollama integration available
+2025-05-28 04:06:24 | INFO | Ollama integration available
+2025-05-28 04:06:41 | INFO | Generating course for topic: Python Programming, level: beginner, days: 7
+2025-05-28 04:06:41 | INFO | Attempting to generate course using AI.
+2025-05-28 14:15:56 | INFO | Ollama integration available
+2025-05-28 14:15:56 | INFO | Attempting to generate course using AI.
+2025-05-28 14:15:56 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 14:15:56 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 14:15:56 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 14:15:56 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 14:15:56 | INFO | Falling back to rule-based course generation.
+2025-05-28 14:15:56 | INFO | Course generated successfully
+2025-05-28 14:16:04 | INFO | Generating course for topic: sql, level: beginner, days: 5
+2025-05-28 14:16:04 | INFO | Attempting to generate course using AI.
+2025-05-28 14:16:04 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 14:16:04 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 14:16:04 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 14:16:04 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 14:16:04 | INFO | Falling back to rule-based course generation.
+2025-05-28 14:16:04 | INFO | Course generated successfully
+2025-05-28 15:38:22 | INFO | Generating course for topic: sql, level: beginner, days: 8
+2025-05-28 15:38:22 | INFO | Attempting to generate course using AI.
+2025-05-28 15:38:22 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 15:38:22 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 15:38:22 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 15:38:22 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 15:38:22 | INFO | Falling back to rule-based course generation.
+2025-05-28 15:38:22 | INFO | Course generated successfully
+2025-05-28 16:15:35 | INFO | Generating course for topic: sql, level: beginner, days: 8
+2025-05-28 16:15:35 | INFO | Attempting to generate course using AI.
+2025-05-28 16:15:35 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 16:15:35 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 16:15:35 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 16:15:35 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 16:15:35 | INFO | Falling back to rule-based course generation.
+2025-05-28 16:15:35 | INFO | Course generated successfully
