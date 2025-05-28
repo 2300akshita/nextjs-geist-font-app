@@ -1,0 +1,66 @@
+2025-05-28 12:08:38 | INFO | Ollama integration available
+2025-05-28 12:11:54 | INFO | Ollama integration available
+2025-05-28 12:11:54 | INFO | Attempting to generate course using AI.
+2025-05-28 12:12:41 | INFO | Ollama integration available
+2025-05-28 12:12:41 | INFO | Attempting to generate course using AI.
+2025-05-28 12:13:47 | INFO | Ollama integration available
+2025-05-28 12:13:47 | INFO | Starting course generation test
+2025-05-28 12:13:47 | INFO | Generating C++ Course
+2025-05-28 12:13:47 | INFO | Attempting to generate course using AI.
+2025-05-28 12:16:39 | ERROR | Failed to parse JSON: Expecting value: line 1 column 2 (char 1)
+2025-05-28 12:16:39 | ERROR | Error generating content with Ollama: Expecting value: line 1 column 2 (char 1)
+2025-05-28 12:16:39 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 12:16:39 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 12:16:39 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 12:16:39 | INFO | Falling back to rule-based course generation.
+2025-05-28 12:16:39 | INFO | Attempting to generate course using AI.
+2025-05-28 12:20:44 | ERROR | Failed to parse JSON: Expecting value: line 1 column 2 (char 1)
+2025-05-28 12:20:44 | ERROR | Error generating content with Ollama: Expecting value: line 1 column 2 (char 1)
+2025-05-28 12:20:44 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 12:20:44 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 12:20:44 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 12:20:44 | INFO | Falling back to rule-based course generation.
+2025-05-28 12:20:44 | INFO | C++ course generated successfully
+2025-05-28 12:20:44 | INFO | Verifying C++ course structure
+2025-05-28 12:20:44 | INFO | C++ course structure verified successfully
+2025-05-28 12:20:44 | INFO | Generating Web Development Course
+2025-05-28 12:20:44 | INFO | Attempting to generate course using AI.
+2025-05-28 12:22:30 | ERROR | Failed to parse JSON: Expecting value: line 1 column 1 (char 0)
+2025-05-28 12:22:30 | ERROR | Error generating content with Ollama: Expecting value: line 1 column 1 (char 0)
+2025-05-28 12:22:30 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 12:22:30 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 12:22:30 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 12:22:30 | INFO | Falling back to rule-based course generation.
+2025-05-28 12:28:21 | ERROR | Failed to parse JSON: Expecting value: line 1 column 1 (char 0)
+2025-05-28 12:28:21 | ERROR | Error generating content with Ollama: Expecting value: line 1 column 1 (char 0)
+2025-05-28 12:28:21 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 12:28:21 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 12:28:21 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 12:28:21 | INFO | Falling back to rule-based course generation.
+2025-05-28 12:28:21 | INFO | Web Development course generated successfully
+2025-05-28 12:28:21 | INFO | Verifying Web Development course structure
+2025-05-28 12:28:21 | INFO | Web Development course structure verified successfully
+2025-05-28 12:28:21 | INFO | All tests passed successfully!
+2025-05-28 13:04:39 | INFO | Ollama integration available
+2025-05-28 13:04:39 | INFO | Starting course generation test
+2025-05-28 13:04:39 | INFO | Generating C++ Course
+2025-05-28 13:04:39 | INFO | Attempting to generate course using AI.
+2025-05-28 13:04:39 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 13:04:39 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 13:04:39 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 13:04:39 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 13:04:39 | INFO | Falling back to rule-based course generation.
+2025-05-28 13:04:39 | INFO | C++ course generated successfully
+2025-05-28 13:04:39 | INFO | Verifying C++ course structure
+2025-05-28 13:04:39 | INFO | C++ course structure verified successfully
+2025-05-28 13:04:39 | INFO | Generating Web Development Course
+2025-05-28 13:04:39 | INFO | Attempting to generate course using AI.
+2025-05-28 13:04:39 | ERROR | Error generating content with Ollama: [Errno 111] Connection refused
+2025-05-28 13:04:39 | ERROR | Error generating course content: Failed to generate modules content
+2025-05-28 13:04:39 | ERROR | AI generation failed: Failed to generate modules content
+2025-05-28 13:04:39 | WARNING | AI generation failed with error: Failed to generate modules content
+2025-05-28 13:04:39 | INFO | Falling back to rule-based course generation.
+2025-05-28 13:04:39 | INFO | Web Development course generated successfully
+2025-05-28 13:04:39 | INFO | Verifying Web Development course structure
+2025-05-28 13:04:39 | INFO | Web Development course structure verified successfully
+2025-05-28 13:04:39 | INFO | All tests passed successfully!
